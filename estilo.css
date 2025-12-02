@@ -1,0 +1,40 @@
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: aquamarine;
+    padding: 2%;
+}
+h1{
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+h2{
+    color: blue;
+    text-align: center;
+}
+.blanco{
+    color: white;
+}
+.formulario{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: blue;
+  color: white;
+  margin: 0;
+}
+legend{
+    font-size: 25px;
+}
+div{
+background-color: blue;
+padding: 6%;
+color: white;
+}
+table{
+    background-color: white;
+}
+th{
+    background-color: blue;
+    color: white;
+}
