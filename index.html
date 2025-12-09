@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-    <div>
+    <header>
  <h1>Mi presentación</h1>
  <br>
     <h2 class="blanco">Propósito de la página</h2>
@@ -15,10 +15,13 @@
    <br>
     <h2 class="blanco">Introduccón</h2>
     <p>Mi nombre es Michel Cervantes, tengo 24 años y actualmente estudio Ingeniería Mecatrónica. Me apasiona el mundo de la tecnología y la innovación, y busco aplicar mis conocimientos en proyectos que integren mecánica, electrónica y programación para crear soluciones prácticas y creativas.</p>
-    </div>
-   <br>
+    </header>
+
+    <main>
+  <br>
     <h2>Hoja de vida</h2>
-    <img src="img_hoja_de_vida.jpeg" width="220px" weight="320px" alt="">
+    <div>
+ <img src="img_hoja_de_vida.jpeg" class="img_1"  alt="">
     <ul>
         <li>Nombre completo: Michel Cervantes</li>
         <li>Edad: 24 años</li>
@@ -28,18 +31,21 @@
         <li>Estudios: Técnico en mantenimiento elecromecánico, Técnico en contabilización de operaciones comerciales y financieras</li>
         <li>Teléfono: 3015309315</li>
     </ul>
-    <h2>Redes sociales</h2>
-    <a href="https://www.facebook.com/">Facebook</a>
-    <br>
-    <a href="https://www.instagram.com/">instagram</a>
+    </div>
+   
     <h2>Pasatiempos</h2>
-    <ul>
+    <div class="pasatiempos">
+  <ul>
         <li>Ver series y animes</li>
         <li>Practicar bocetos, dibujar y colorear</li>
         <li>Aprender sobre programación de microncontroladores y crear cicruitos</li>
     </ul>
+    </div>
+  
+    <br>
     <h2>Tareas prioritarias para la semana</h2>
-    <ol>
+    <div class="tareas">
+ <ol>
      <li>Ponerme al día con los entregables del seminario de grado</li>
      <li>Lavar mi ropa sucia</li>
      <li>Sacar una cita con medico general</li>
@@ -47,7 +53,9 @@
      <li>Sacar una cita con el odontólogo</li>
      <li>Comprar ropa</li>
     </ol>
-    <table border="5" cellspacing="5">
+    </div>
+   <br>
+    <table border="1" cellspacing="1">
         <thead>
         <tr>
             <th>Lunes</th>
@@ -75,24 +83,34 @@
     <br>
     <br>
     <div class="formulario">
-        <legend><b>Contacto</b></legend>
+        <fieldset>
+ <legend><b>Contacto</b></legend>
     <br>
-    <form>
+    <form id="form">
         <label for="text">Nombre completo</label>
-        <input type="text">
+        <input type="text" id="name">
         <br>
         <label for="text">Motivo</label>
-        <input type="text">
+        <input type="text" id="motivo">
         <br>
         <label for="text">Correo electrónico</label>
-        <input type="email">
+        <input type="email" id="email">
         <br>
         <button>Enviar</button>
-
-
+        <p class="warnings" id="warnings"></p>
     </form>
+        </fieldset>
+       
     </div>
-    
-   <script src="Ejercicio.js"></script>
+     </main>
+     <br>
+<footer>
+<h3>Redes sociales</h3>
+    <a href="https://www.facebook.com/michael.cervantes.5203/">Facebook</a>
+    <br>
+    <a href="https://www.instagram.com/michelcervantes_11?fbclid=IwY2xjawOgGS1leHRuA2FlbQIxMABicmlkETFQQ0dKSnphd1I5b2xTR3g5c3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHuBU9itX0Xolml_C3GeONhSPnLmyL8qmmCeVbsA2a8aKo3Fwpa6aqxjVoLCy_aem_91DwLc3Uf9Jr6Kj8jFhyBQ">instagram</a>
+</footer>
+     <script src="script.js"></script>       
+  
 </body>
 </html>

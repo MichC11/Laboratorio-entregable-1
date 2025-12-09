@@ -1,6 +1,6 @@
 body{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: aquamarine;
+    background-color: rgb(255, 255, 255);
     padding: 2%;
 }
 h1{
@@ -11,6 +11,9 @@ h2{
     color: blue;
     text-align: center;
 }
+h3{
+    color: white;
+}
 .blanco{
     color: white;
 }
@@ -19,17 +22,46 @@ h2{
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: blue;
-  color: white;
+  color: blue;
   margin: 0;
 }
+button{
+    border: 0;
+    font-size: 15px;
+    padding: 5px;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    transition: .4s ease;
+}
+.warnings{
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: blue;
+    padding-top: 20px;
+}
+button:hover{
+ background-color: white;
+    color: blue;
+    border: 1px solid;
+}
+   
+
 legend{
     font-size: 25px;
 }
-div{
+header{
 background-color: blue;
 padding: 6%;
 color: white;
+}
+footer{
+    background-color: black;
+    padding: 1em;
+}
+a{
+    color: white;
 }
 table{
     background-color: white;
@@ -38,3 +70,25 @@ th{
     background-color: blue;
     color: white;
 }
+div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #007BFF;
+    padding: 50px;
+}
+.pasatiempos{
+    padding: 10px;
+}
+.tareas{
+    padding: 10px;
+}
+ul{
+flex: 1;
+min-width: 100px;
+}
+.img_1{
+    width: auto;
+    height: 220px;
+}
+  
